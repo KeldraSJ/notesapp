@@ -19,3 +19,5 @@ So I can record something I need to remember
 ```
 
 ## Wireframes
+
+![wireframes_notesapp](https://user-images.githubusercontent.com/82119816/136220076-dbe60cb8-b7c0-4ab3-8fa6-90d512c808df.png)
