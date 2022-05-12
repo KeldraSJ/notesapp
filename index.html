@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
     <title>Notes App</title>
   </head>
   <body>
-    <header>
-      <div class="container"></div>
-      <h1>Welcome to Notes</h1>
-      <div class="notes" id="app"></div>
-      <h2>Create note</h2>
-      <form id="new note">
-        <input type="text" placeholder="note title" id="note-title" />
-        <input type="text" placeholder="note content" id="note-content" />
-        <input type="submit" value="new note" id="new-note" />
-      </form>
-    </header>
-    <script src="./js/main.js"></script>
-    <script src="./js/interface.js"></script>
-    <script src="./tests/test.js"></script>
+    <div class="notes" id="app">
+      <div class="side-nav-bar">
+        <button class="add-note" type="button">add note</button>
+        <div class="notes-list">
+          <div class="notes-list-item notes-list-item--selected">
+            <div class="note-title">Title</div>
+            <div class="note-body">Description</div>
+            <div class="note-date">Date</div>
+          </div>
+        </div>
+      </div>
+      <div class="notes-snapshot">
+        <input class="notes-title" type="text" placeholder="Enter title..." />
+        <textarea
+          class="notes-body"
+          placeholder="Enter description..."
+        ></textarea>
+      </div>
+
+      <script src="./js/main.js" type="module"></script>
+      <script src="./js/interface.js"></script>
+      <script src="./tests/test.js"></script>
+    </div>
   </body>
 </html>
